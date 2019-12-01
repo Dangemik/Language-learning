@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="Zadanie2" namespace="Zadanie2.Models">
-  <class name="Produkt" table="produkty" dynamic-update="true" >
-    <cache usage="read-write"/>
-    <id name="IdProduktu" column="IdProduktu" type="int">
-    </id>
-    <property name="IloscProduktu" />
-  </class>
-</hibernate-mapping>
