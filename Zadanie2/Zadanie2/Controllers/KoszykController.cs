@@ -34,7 +34,7 @@ namespace Zadanie2.Controllers
         {
             try
             {
-                baseService.DodajDoKoszyka(produkt);
+                baseService.DodajDoKoszyka(produkt.IdProduktu,produkt.IloscProduktu);
                 return RedirectToAction("Index");
             }
             catch (Exception exception)

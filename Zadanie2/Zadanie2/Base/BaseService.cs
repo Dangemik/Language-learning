@@ -11,13 +11,17 @@ namespace Zadanie2.Base
     public class BaseService
     {
 
-        public void DodajDoKoszyka(Produkt produkt)
+        public void DodajDoKoszyka(int id, int ilosc)
         {
             using (ISession session = NHibertnateSession.OpenSession())
             {
                 using (ITransaction transaction = session.BeginTransaction())
                 {
-                    session.Save(produkt);
+                    session.Save(new Produkt()
+                    {
+                        IdProduktu = id,
+                        IloscProduktu = ilosc
+                    });
                     transaction.Commit();
                 }
             }
