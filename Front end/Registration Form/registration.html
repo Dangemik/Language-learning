@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: PowderBlue;
+}
+.personal
+{
+	width:15%;
+}
+</style>
+<script>
+function endForm(){
+alert("Thank you for your registration");
+}
+</script>
+<title>Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+</head>
+<body>
+<center><h1>Enter your data</h1></center>
+<form method="post" onsubmit="return endForm()">
+<fieldset>
+<legend>Personal information</legend>
+	First name:<br>
+	<input class="personal" type="text" name="firstname" autofocus required><br>
+	Last name:<br>
+	<input class="personal" type="text" name="lastname" required><br>
+	Your Country:<br>
+	<input class="personal" list="browsers" name="browser" required><br>
+	Birthday:<br>
+	<input class="personal" type="date" name="bday"><br>
+	E-mail:<br>
+	<input class="personal" type="email" name="email" required><br>
+	Telephone:<br>
+	<input class="personal" type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="xxx-xxx-xxx"> 
+	
+	<datalist id="browsers">
+		<option value="Poland">
+		<option value="USA">
+		<option value="England">
+		<option value="Germany">
+		<option value="Spain">
+	</datalist>
+	<br>
+	<br>
+	<input type="radio" name="gender" value="male" checked> Male <br>
+	<input type="radio" name="gender" value="female"> Female <br>
+	<input type="radio" name="gender" value="other"> Other <br>
+</fieldset>
+<fieldset>
+<legend>Your Cats</legend>
+	<select name="cats">
+	 <option value="British">British</option>
+	 <option value="Scotish">Scotish</option>
+	 <option value="Egipt">American</option>
+	 <option value="None" selected>None</option>
+	</select>
+	<select name="size">
+	 <option value="small">small</option>
+	 <option value="medium">medium</option>
+	 <option value="large">large</option>
+	</select>
+	<br>
+	<span>How many cats do you have? </span>
+	<input type="number" name="NumberCats" step="1" min="0" value="0" style="width:5%">
+</fieldset>
+<fieldset>
+<legend>Which features has your cat?</legend>
+	<input type="checkbox" name="catsFeatures" value="angry">Angry
+	<br>
+	<input type="checkbox" name="catsFeatures" value="lovely">Lovely
+	<br>
+	<input type="checkbox" name="catsFeatures" value="lazy">Lazy
+	<br>
+	<input type="checkbox" name="catsFeatures" value="fluffy">Fluffy
+</fieldset>
+<fieldset>
+<legend>Which color has your cat?</legend>
+	<input type="color" name="furColor" value="black">
+</fieldset>
+<fieldset>
+<legend>Describe day with Cats</legend>
+	<textarea name="describe" rows="10" cols="30">I don't have cat :/</textarea>
+</fieldset>
+<input type="submit" value="submit" style="margin:5px;">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
