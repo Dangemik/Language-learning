@@ -1,0 +1,80 @@
+header {
+  color: white;
+  background-color: rgb(70, 130, 180);
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(176, 196, 221);
+  width: 20%;
+  height: 720px;
+  float: left;
+}
+nav a,
+nav h1 {
+  display: block;
+  margin-left: 2%;
+  padding: 8px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(70, 130, 180);
+}
+
+main {
+  background-color: rgb(230, 242, 255);
+  width: 80%;
+  height: 720px;
+  float: left;
+}
+
+article {
+  padding: 20px 50px;
+}
+
+article h1 {
+  color: white;
+  background-color: rgb(70, 130, 180);
+  display: inline;
+  padding: 7px;
+  padding-bottom: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+article div {
+  border-style: groove;
+  padding: 10px;
+}
+article div author {
+  width: 50%;
+  float: left;
+}
+article div time {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+article div p {
+  clear: both;
+  padding-top: 15px;
+}
+article div button {
+  display: block;
+  background-color: rgb(70, 130, 180);
+  color: white;
+  padding: 10px;
+  margin: 0px auto;
+}
+
+footer {
+  clear: both;
+  background-color: rgb(70, 130, 180);
+  padding: 8px;
+  text-align: right;
+  color: white;
+}
+footer p {
+  margin-right: 6%;
+}

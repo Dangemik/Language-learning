@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <title>PSI</title>
+    <meta name="author" content="Dawid Kmak" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="description" content="Strona PSI" />
+    <meta charset="UTF-8" />
+    <style></style>
+  </head>
+  <body>
+    <form>
+      First name:<input type="text" name="firstn" id="firstn" /><br />
+      Last name:<input type="text" name="lastn" id="lastn" /><br />
+      Salary: <input type="number" name="salary" id="salary" /><br />
+    </form>
+    <button onclick="addForm()">Add</button>
+    <button onclick="setItem('zm', 23, localStorage)">local</button>
+    <button onclick="setItem('zm', 1, sessionStorage)">session</button>
+    <button onclick="setItem('zm',43)">cookies</button>
+    <ul id="lista"></ul>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+  <script src="script.js"></script>
+</html>

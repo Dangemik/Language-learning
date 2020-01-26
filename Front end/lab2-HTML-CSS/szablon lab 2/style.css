@@ -1,0 +1,53 @@
+body {
+  font-family: Verdana;
+  background: silver;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.gold_background {
+  background: gold;
+}
+span {
+  font-weight: bold;
+}
+#span_green {
+  color: green;
+}
+
+#span_red {
+  color: red;
+}
+.logo {
+  float: right;
+}
+
+.div_frame_1 {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: blue;
+}
+
+.div_frame_2 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black red;
+  border-radius: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+}
+.just_p {
+  text-align: right;
+}
